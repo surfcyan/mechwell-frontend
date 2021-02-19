@@ -9,7 +9,16 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  audioPlayer: HTMLMediaElement
+
   ngOnInit(): void {
+
+    this.audioPlayer = document.getElementById('vid') as HTMLMediaElement;
+    console.log(this.audioPlayer)
+    this.audioPlayer.muted = true;
+    this.audioPlayer.play();
+    this.audioPlayer.loop = true;
+
   }
 
 }

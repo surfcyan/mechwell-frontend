@@ -12,6 +12,9 @@ import { GroupCompaniesComponent } from './group-companies/group-companies.compo
 import { ErrorComponent } from './error/error.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SectionTwoComponent } from './home/section-two/section-two.component';
+import { ServerService } from './services/server.service';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,13 +27,15 @@ import { FooterComponent } from './footer/footer.component';
     GroupCompaniesComponent,
     ErrorComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SectionTwoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

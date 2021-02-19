@@ -1,0 +1,65 @@
+.logo {
+    position: absolute;
+    width: 135px;
+    left: 30px;
+    top: 12px;
+}
+.btn-group {
+    display: flex;
+    height: fit-content;
+    margin: auto;
+}
+.btn-group div {
+    padding: 0 12px;
+    text-transform: uppercase;
+}
+.mb-more {
+    display: none;
+}
+.mb-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+li {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 20px;
+}
+li a {
+    color: white;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 70px;
+        left: 15px;
+        top: 12px;
+    }
+    .btn-group {
+        display: none;
+    }
+    .mb-more {
+        display: block;
+        height: fit-content;
+        margin: auto 24px;
+    }
+    .mb-more i {
+        font-size: 28px;
+    }
+}
