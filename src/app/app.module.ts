@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SectionTwoComponent } from './home/section-two/section-two.component';
 import { ServerService } from './services/server.service';
 import { HttpClientModule } from "@angular/common/http";
+import { SectionThreeComponent } from './home/section-three/section-three.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from "@angular/common/http";
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    SectionTwoComponent
+    SectionTwoComponent,
+    SectionThreeComponent
   ],
   imports: [
     BrowserModule,
