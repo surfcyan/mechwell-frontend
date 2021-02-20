@@ -16,6 +16,11 @@ import { SectionTwoComponent } from './home/section-two/section-two.component';
 import { ServerService } from './services/server.service';
 import { HttpClientModule } from "@angular/common/http";
 import { SectionThreeComponent } from './home/section-three/section-three.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SectionFourComponent } from './home/section-four/section-four.component';
+import { WhyComponent } from './home/why/why.component';
+import { HomeAboutUsComponent } from './home/home-about-us/home-about-us.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +35,17 @@ import { SectionThreeComponent } from './home/section-three/section-three.compon
     HeaderComponent,
     FooterComponent,
     SectionTwoComponent,
-    SectionThreeComponent
+    SectionThreeComponent,
+    SectionFourComponent,
+    WhyComponent,
+    HomeAboutUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    CarouselModule,
+    BrowserAnimationsModule,
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]

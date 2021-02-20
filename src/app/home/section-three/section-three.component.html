@@ -1,19 +1,17 @@
-<div class="container">
+<div
+    style="padding: 48px; background-image: url(../../../assets/homePageImage.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
 
-    <h2>Our Products</h2>
+        <h2 class="centerText">Our Products</h2>
+        <h4 class="centerText">We have provided solution for the below components</h4>
+        <br>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let e of items">
+                <div style="margin: 12px 24px;">
+                    <img src="{{e.gif}}" alt="">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
-            </div>
-        </div>
     </div>
-
 </div>
