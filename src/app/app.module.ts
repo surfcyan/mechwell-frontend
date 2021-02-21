@@ -23,6 +23,7 @@ import { WhyComponent } from './home/why/why.component';
 import { HomeAboutUsComponent } from './home/home-about-us/home-about-us.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OurClientsComponent } from './our-clients/our-clients.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SectionThreeComponent,
     SectionFourComponent,
     WhyComponent,
-    HomeAboutUsComponent
+    HomeAboutUsComponent,
+    OurClientsComponent
   ],
   imports: [
     BrowserModule,

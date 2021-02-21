@@ -5,6 +5,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ErrorComponent } from './error/error.component';
 import { GroupCompaniesComponent } from './group-companies/group-companies.component';
 import { HomeComponent } from './home/home.component';
+import { OurClientsComponent } from './our-clients/our-clients.component';
 import { ProductsComponent } from './products/products.component';
 import { TeamComponent } from './team/team.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'groupCompanies', component: GroupCompaniesComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'ourTeam', component: TeamComponent },
+  { path: 'ourClients', component: OurClientsComponent },
   { path: '**', component: ErrorComponent },
 ];
 
