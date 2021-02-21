@@ -1,2 +1,68 @@
-<p>contact-us works!</p>
-<button (click)="test()">TEST</button>
+<div style="padding-top:12vh; min-height:100vh">
+
+    <h2 style="text-align:center;">Contact Us</h2>
+    <br><br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../../assets/homePageImage.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="col-md-6">
+                <h4>Sales & Marketing:</h4>
+                <p>sales@patilautomation.com/ marketing@patilautomation.com</p>
+                <h4>HR & Admin:</h4>
+                <p>hr.papl@patilautomation.com</p>
+                <h4>Purchase:</h4>
+                <p>purchase@patilautomation.com</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Head Office:</h3>
+                Gat No. 154, Behind GE company, Phase-II, MIDC Chakan, Sadumbre, Tal. Maval, Dist. Pune (INDIA) - 412
+                109
+                Contact No. : +91 9168338383
+                E-mail : sales@patilautomation.com
+            </div>
+            <div class="col-md-6">
+                <h3>Branch Office (NCR):</h3>
+                Ground floor, Eco Tower 1, Cyberwalk, Plot CP9, Sector 8, IMT Manesar, Gurgaon, Haryana - 122 050
+                E-mail : marketing@patilautomation.com
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="form-group" style="background-color:rgb(209, 209, 209);">
+
+        <form class="padding container" (ngSubmit)="submit()" [formGroup]="formDet">
+
+            <h3>Drop a line to us. Your word is most important to us.</h3>
+            <br>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input matInput formControlName="name" type="text">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input matInput formControlName="phone" type="tel">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Enter Message</mat-label>
+                <textarea matInput rows="4" formControlName="msg"></textarea>
+            </mat-form-field>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+
+</div>

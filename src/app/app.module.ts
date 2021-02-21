@@ -21,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionFourComponent } from './home/section-four/section-four.component';
 import { WhyComponent } from './home/why/why.component';
 import { HomeAboutUsComponent } from './home/home-about-us/home-about-us.component';
-
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,9 @@ import { HomeAboutUsComponent } from './home/home-about-us/home-about-us.compone
     HttpClientModule,
     CarouselModule,
     BrowserAnimationsModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]
