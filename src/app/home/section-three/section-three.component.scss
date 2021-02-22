@@ -1,3 +1,13 @@
-.centerText{
+.centerText {
     text-align: center;
+}
+.filter-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+    backdrop-filter: blur(4px) brightness(0.7);
+    background-position: center;
+}
+h2,h4{
+    color: white;
 }

@@ -1,14 +1,82 @@
 <div
-    style="padding: 48px; background-image: url(../../../assets/homePageImage.jpg);background-repeat: no-repeat;background-size: cover;">
+    style="background-image: url(../../../assets/homePageImage.jpg);background-repeat: no-repeat;background-size: cover;">
 
-    <div class="container">
+    <div class="filter-overlay">
+        <div class="container">
 
-        <h3>About Us</h3>
+            <h1>About Us</h1>
+            <br><br>
+            <div>
+                <owl-carousel-o [options]="customOptions">
 
-        <div>
-            CROUSEL
+                    <ng-template carouselSlide>
+                        <div class="content-container">
+                            <h4 class="title">We are an India based company founded with an objective of
+                                "Contemporary world
+                                class standards in Welding and Line Automation" Such as :</h4>
+                            <ul>
+                                <li>Line Automation</li>
+                                <li>Robotic Welding Lines and Welding Cell</li>
+                                <li>Welding SPM's</li>
+                                <li>Welding Fixture and Gauges.</li>
+                                <li>Special Purpose Machines.</li>
+                            </ul>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="content-container">
+                            <h3 class="title">Vision:</h3>
+                            <h4>Work Together as a team to "respect opinion and views of others"
+                            </h4>
+
+                            <h3 style="margin-top:20px;" class="title">Mission:</h3>
+                            <h4>"Customers Satisfaction" is what we aspire for.</h4>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="content-container">
+                            <!-- <div class="large-3 medium-4 columns">
+                            <div class="tg_img" style="overflow:visible;"> <img
+                                    src="/Resources/Templates/PAThemes/img/testimonial/papl_goal.png" alt=""></div>
+                        </div> -->
+                            <div>
+                                <h2 class="title">Our Goals:</h2>
+                                <ul style="color:#fff;">
+                                    <li>Customer Focus</li>
+                                    <li>Quick response to Customer needs</li>
+                                    <li>On time delivery &amp; Installation Commitment</li>
+                                    <li>Enhance customer Satisfaction</li>
+                                    <li>Superior quality &amp; advance Technology</li>
+                                    <li>Proven success</li>
+                                    <li>Provide superior / cost effective system solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ng-template>
+
+                    <ng-template carouselSlide>
+                        <div class="content-container">
+                            <div class="large-3 medium-4 columns">
+                                <div class="tg_img"> <img
+                                        src="/Resources/Templates/PAThemes/img/testimonial/paplQuality.png" alt="">
+                                </div>
+                            </div>
+                            <div class="large-9 medium-8 columns">
+                                <h3 class="title">Quality Policy:</h3>
+                                <h4 class="white semi-bold">We are committed to achieving complete satisfaction of
+                                    our customers by delivering products with high quality,
+                                    competitive price &amp; right time. This will achieve by team work
+                                    and implementing Quality Management System.
+                                    Continually improving its effectiveness</h4>
+                            </div>
+
+                        </div>
+                    </ng-template>
+
+                </owl-carousel-o>
+            </div>
+
         </div>
 
     </div>
-
 </div>
