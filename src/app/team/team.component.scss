@@ -11,3 +11,35 @@ h4 {
     margin: 18px auto;
     padding: 0;
 }
+.user-cont {
+    width: fit-content;
+    margin: auto;
+}
+.user-cont img {
+    border-radius: 5000px;
+}
+.user-cont p {
+    text-align: center;
+    color: gray;
+}
+.user-det {
+    margin: 12px 0;
+}
+.user-det h3 {
+    font-weight: 400;
+}
+.sml {
+    width: 150px;
+}
+.mid {
+    width: 280px;
+}
+.lrg {
+    width: 350px;
+}
+.xlrg {
+    width: 400px;
+}
+.row{
+    margin-bottom: 48px;
+}
