@@ -24,6 +24,8 @@ import { HomeAboutUsComponent } from './home/home-about-us/home-about-us.compone
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OurClientsComponent } from './our-clients/our-clients.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,8 @@ import { OurClientsComponent } from './our-clients/our-clients.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]

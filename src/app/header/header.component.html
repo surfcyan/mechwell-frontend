@@ -14,13 +14,13 @@
 
 </div>
 
-<div class="mb-more">
-    <i class="fa fa-bars" aria-hidden="true" (click)="openMenu()"></i>
+<div class="mb-more" style="z-index: 11;">
+    <i class="fa fa-bars" style="transition: 0.4s;" id="brgr-menu" aria-hidden="true" (click)="openMenu()"></i>
 </div>
 
-<!-- <div class="mb-menu">
+<div class="mb-menu menu-hide" id="menu">
     <span class="flexOne"></span>
-    <ul>
+    <ul (click)="openMenu()">
         <li>
             <a routerLink="/">Home</a>
         </li>
@@ -34,6 +34,9 @@
             <a routerLink="/ourTeam">Our Team</a>
         </li>
         <li>
+            <a routerLink="/ourClients">Our Clients</a>
+        </li>
+        <li>
             <a routerLink="/groupCompanies">Our Group Companies</a>
         </li>
         <li>
@@ -41,4 +44,4 @@
         </li>
     </ul>
     <span class="flexOne"></span>
-</div> -->
+</div>

@@ -16,4 +16,28 @@ ul {
 li {
     margin: 0;
     padding: 0;
+    color: #afafaf;
+}
+.footer-end {
+    display: flex;
+    width: 100%;
+    padding: 6px 24px;
+    background-color: #343434;
+    color: white;
+}
+.footer {
+    background-color: black;
+    color: white;
+    min-height: 30vh;
+    position: relative;
+    padding-top: 48px;
+}
+@media only screen and (max-width: 768px) {
+    .footer-end {
+        flex-direction: column;
+        padding-bottom: 24px;
+    }
+    .footer{
+        padding-bottom: 24px;
+    }
 }
