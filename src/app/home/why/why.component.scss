@@ -1,3 +1,30 @@
-h1{
+h1 {
     text-align: center;
+}
+.roundIconContainer {
+    color: white;
+    margin: 0 8px;
+    font-size: 18px;
+}
+.roundIconContainer i{
+    padding: 8px;
+    border-radius: 500px;
+    background-color: red;
+}
+h4 {
+    font-size: 18px;
+}
+ul {
+    font-family: "EB Garamond", serif;
+}
+.row{
+    margin: 48px auto;
+}
+.underline{
+    height: 2px;
+    width: 30vw;
+    background-color: red;
+    padding: 0.5px;
+    margin: auto;
+    display: block;
 }

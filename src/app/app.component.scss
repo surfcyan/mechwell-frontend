@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: 7vh;
+    box-shadow: 1px 1px 15px black;
+    animation: appear 1s forwards;
+}
+@keyframes appear {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 0;
+    }
+}

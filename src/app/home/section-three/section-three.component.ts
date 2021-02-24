@@ -18,7 +18,7 @@ export class SectionThreeComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: true,
+    dots: false,
     navSpeed: 400,
     responsive: {
       0: {
@@ -31,7 +31,7 @@ export class SectionThreeComponent implements OnInit {
         items: 3
       },
       940: {
-        items: 4
+        items: 3
       }
     },
     nav: false

@@ -17,6 +17,55 @@ h1 {
     text-align: center;
 }
 .btn {
-    margin: auto!important;
+    margin: auto !important;
     display: block;
+}
+.col-md-4 {
+    padding: 12px;
+}
+.row {
+    margin: 24px 0;
+}
+.card {
+    height: 100%;
+}
+
+.imm-card {
+    height: 280px;
+    width: 100%;
+
+    background-image: url(../../assets/homePageImage.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+
+    position: relative;
+    cursor: pointer;
+}
+.imm-card h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+
+    position: absolute;
+    bottom: 0;
+    transition: 0.2s;
+}
+.imm-card .cont {
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+}
+.col-md-6 {
+    padding: 24px 12px;
+}
+.cont{
+    transition: 0.4s;
+}
+.cont:hover {
+    backdrop-filter: brightness(0.5);
+}
+.cont:hover h3{
+    font-size: 26px;
 }
