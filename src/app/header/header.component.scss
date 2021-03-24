@@ -1,17 +1,24 @@
 .logo {
     position: absolute;
-    width: 135px;
+    // width: 135px;
+    height: 100%;
     left: 30px;
-    top: 12px;
+    // top: 12px;
+    padding: 6px;
 }
 .btn-group {
     display: flex;
     height: fit-content;
-    margin: auto;
+    // margin: auto;
+    height: 100%;
 }
 .btn-group div {
+    line-height: 7vh;
     padding: 0 12px;
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 17px;
+    transition: 0.5s;
 }
 .mb-more {
     display: none;
@@ -56,9 +63,10 @@ li a {
 }
 @media only screen and (max-width: 768px) {
     .logo {
-        width: 70px;
+        // width: 70px;
         left: 15px;
-        top: 12px;
+        // top: 12px;
+        height: 100%;
     }
     .btn-group {
         display: none;
@@ -71,4 +79,10 @@ li a {
     .mb-more i {
         font-size: 28px;
     }
+}
+
+.active{
+    background-color: #ff0240;
+    color: white;
+    padding: 0 42px!important;
 }

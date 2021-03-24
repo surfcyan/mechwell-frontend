@@ -36,6 +36,7 @@ import { SimulationComponent } from './products/dialog-pages/simulation/simulati
 import { AutoComponent } from './products/dialog-pages/auto/auto.component';
 import { GaugesComponent } from './products/dialog-pages/gauges/gauges.component';
 import { ToolsComponent } from './products/dialog-pages/tools/tools.component';
+import { OneBikeComponent } from './home/one-bike/one-bike.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,8 @@ import { ToolsComponent } from './products/dialog-pages/tools/tools.component';
     SimulationComponent,
     AutoComponent,
     GaugesComponent,
-    ToolsComponent
+    ToolsComponent,
+    OneBikeComponent
   ],
   imports: [
     BrowserModule,

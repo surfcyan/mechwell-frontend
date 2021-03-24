@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public route: Router) { }
 
   ngOnInit(): void {
   }
@@ -21,7 +22,7 @@ export class HeaderComponent implements OnInit {
     if (!this.open) {
       document.body.style.overflow = "hidden"
     }
-    else{
+    else {
       document.body.style.overflow = "auto"
     }
     this.open = !this.open;

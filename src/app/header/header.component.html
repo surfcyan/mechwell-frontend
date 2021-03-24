@@ -4,13 +4,13 @@
 
 <div class="btn-group">
 
-    <div routerLink="/">HOME</div>
-    <div routerLink="/aboutUs">About Us</div>
-    <div routerLink="/products">Our Products</div>
-    <div routerLink="/ourTeam">Our Team</div>
-    <div routerLink="/ourClients">Our Clients</div>
-    <div routerLink="/groupCompanies">Our Group Companies</div>
-    <div routerLink="/contactUs">Contact Us</div>
+    <div routerLink="/" [ngClass]="{'active':route.url=='/'}">HOME</div>
+    <div routerLink="/aboutUs" [ngClass]="{'active':route.url=='/aboutUs'}">About Us</div>
+    <div routerLink="/products" [ngClass]="{'active':route.url=='/products'}">Our Products</div>
+    <div routerLink="/ourTeam" [ngClass]="{'active':route.url=='/ourTeam'}">Our Team</div>
+    <div routerLink="/ourClients" [ngClass]="{'active':route.url=='/ourClients'}">Our Clients</div>
+    <div routerLink="/groupCompanies" [ngClass]="{'active':route.url=='/groupCompanies'}">Our Group Companies</div>
+    <div routerLink="/contactUs" [ngClass]="{'active':route.url=='/contactUs'}">Contact Us</div>
 
 </div>
 
