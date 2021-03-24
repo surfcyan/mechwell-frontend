@@ -8,6 +8,7 @@ video {
     min-height: 56.25vw; /* 100 * 9 / 16 */
 }
 .parent-element-to-video {
+    filter: brightness(0.6);
     overflow: hidden;
     position: relative;
 }

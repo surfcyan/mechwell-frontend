@@ -33,3 +33,30 @@
     text-align: justify;
     font-size: 12px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // background-color: #2196f3;
+    padding: 10px;
+    height: 80%;
+}
+.grid-item {
+    // background-color: rgba(255, 255, 255, 0.8);
+    // border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.br-l{
+    border-left: 1px solid grey;
+}
+.br-b{
+    border-bottom: 1px solid grey;
+}
+.br-t{
+    border-top: 1px solid grey;
+}
+.br-r{
+    border-right: 1px solid grey;
+}

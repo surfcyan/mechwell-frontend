@@ -1,6 +1,6 @@
-<div class="full-min-width">
+<div class="full-min-width container">
 
-    WEBTECH INTERNATIONAL
+    <!-- WEBTECH INTERNATIONAL
 
     TECHNICA SOLUTIONS
 
@@ -10,7 +10,15 @@
 
     KSC KRISHNA STEEL PVT. LTD.
 
-    KRISHNA STEEL CORPORATION
+    KRISHNA STEEL CORPORATION -->
+
+    <div class="profCard" *ngFor="let e of companies">
+        <div class="textContainer">
+            <h4>{{e.title}}</h4>
+            <!-- <p>{{e.desc}}</p> -->
+        </div>
+        <img src="../../../assets/founder/placeholder-user-image.jpg" alt="">
+    </div>
 
 
 </div>

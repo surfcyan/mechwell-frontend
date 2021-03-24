@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { ProductsComponent } from 'src/app/products/products.component';
 
 @Component({
   selector: 'app-section-three',
@@ -8,7 +9,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class SectionThreeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
@@ -38,13 +40,16 @@ export class SectionThreeComponent implements OnInit {
   }
 
   items = [
-    { title: 'Slide 1', gif: '../../../assets/products/giphy.gif' },
-    { title: 'Slide 2', gif: '../../../assets/products/giphy.gif' },
-    { title: 'Slide 3', gif: '../../../assets/products/giphy.gif' },
-    { title: 'Slide 4', gif: '../../../assets/products/giphy.gif' },
-    { title: 'Slide 5', gif: '../../../assets/products/giphy.gif' },
-    { title: 'Slide 6', gif: '../../../assets/products/giphy.gif' },
-    { title: 'Slide 7', gif: '../../../assets/products/giphy.gif' },
+    { title: 'Welding Jigs & Fixture', bg: '../../assets/products/weld_bg.png', type: 'welding', bg_size: 'cover', color: 'white' },
+    { title: 'Robotics Cell & Automations', bg: '../../assets/products/robo_bg.png', type: 'robotics', bg_size: 'contain', color: 'black' },
+    { title: 'SPM', bg: '../../assets/products/spm/spm.png', type: 'spm', bg_size: 'contain', color: 'black' },
+    { title: 'Fabrication & Machining', bg: '../../assets/products/line/fixtureline.png', type: 'fab', bg_size: 'cover', color: 'white' },
+    { title: 'Line Automation', bg: '../../assets/products/line/fixtureline.png', type: 'line', bg_size: 'cover', color: 'black' },
+    { title: 'Simulation', bg: '../../assets/products/simulation/sim_bg.jpeg', type: 'sim', bg_size: 'cover', color: 'white' },
+    { title: 'Automobile Components', bg: '../../assets/products/automobile/auto_bg.jpeg', type: 'auto', bg_size: 'cover', color: 'white' },
+    { title: 'Gauges & Panel Checkers', bg: '../../assets/products/gauges/gauges.png', type: 'gauges', bg_size: 'cover', color: 'black' },
+    { title: 'Tools & Dies', bg: '../../assets/products/tools/tools_dies.jpeg', type: 'tools', bg_size: 'cover', color: 'white' },
   ]
+
 
 }

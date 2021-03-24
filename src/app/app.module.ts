@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ProductsComponent } from './products/products.component';
+import { ProductsComponent, ProductViewComponent } from './products/products.component';
 import { TeamComponent } from './team/team.component';
 import { GroupCompaniesComponent } from './group-companies/group-companies.component';
 import { ErrorComponent } from './error/error.component';
@@ -25,7 +25,17 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OurClientsComponent } from './our-clients/our-clients.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { RoboticsComponent } from './products/dialog-pages/robotics/robotics.component';
+import { WeldingComponent } from './products/dialog-pages/welding/welding.component';
+import { SpmComponent } from './products/dialog-pages/spm/spm.component';
+import { FabricationComponent } from './products/dialog-pages/fabrication/fabrication.component';
+import { LineComponent } from './products/dialog-pages/line/line.component';
+import { SimulationComponent } from './products/dialog-pages/simulation/simulation.component';
+import { AutoComponent } from './products/dialog-pages/auto/auto.component';
+import { GaugesComponent } from './products/dialog-pages/gauges/gauges.component';
+import { ToolsComponent } from './products/dialog-pages/tools/tools.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +53,17 @@ import {MatButtonModule} from '@angular/material/button';
     SectionFourComponent,
     WhyComponent,
     HomeAboutUsComponent,
-    OurClientsComponent
+    OurClientsComponent,
+    ProductViewComponent,
+    RoboticsComponent,
+    WeldingComponent,
+    SpmComponent,
+    FabricationComponent,
+    LineComponent,
+    SimulationComponent,
+    AutoComponent,
+    GaugesComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +75,11 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+  ],
+  entryComponents: [
+    ProductViewComponent,
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]

@@ -36,8 +36,9 @@ h1 {
 
     background-image: url(../../assets/homePageImage.jpg);
     background-position: center;
-    background-size: cover;
+    // background-size: cover;
     border-radius: 8px;
+    background-repeat: no-repeat;
 
     position: relative;
     cursor: pointer;
@@ -60,12 +61,12 @@ h1 {
 .col-md-6 {
     padding: 24px 12px;
 }
-.cont{
+.cont {
     transition: 0.4s;
 }
 .cont:hover {
     backdrop-filter: brightness(0.5);
 }
-.cont:hover h3{
+.cont:hover h3 {
     font-size: 26px;
 }

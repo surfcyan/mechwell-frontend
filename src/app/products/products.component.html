@@ -2,113 +2,13 @@
 
     <h1 class="gb-title gb-title-pad">OUR PRODUCTS</h1>
 
-    <!-- <div class="container">
-
-        <div class="row">
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>WELDING JIGS AND FIXTURE</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>ROBOTICS CELLS AND AUTOMATIONS</h3>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>SPM</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>FABRICATION & MACHINING</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>LINE AUTOMATION</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>SIMULATION</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>AUTOMOBILE COMPONENTS</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>GAUGES & PANEL CHECKERS</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-            <div class="col-md-4">
-
-                <mat-card class="card">
-                    <img mat-card-image src="../../assets/homePageImage.jpg">
-                    <mat-card-content>
-                        <h3>TOOLS AND DIES</h3>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-        </div>
-
-    </div> -->
-
     <div class="container">
         <div class="row">
 
-            <div class="col-md-6" *ngFor="let item of items">
-                <div class="imm-card" style="background-image: url({{item.bg}});">
+            <div class="col-md-6" *ngFor="let item of items;let i=index" (click)="openDialog(i)">
+                <div class="imm-card" style="background-image: url({{item.bg}});" [ngStyle]="{'background-size':item.bg_size}">
                     <div class="cont">
-                        <h3>{{item.title}}</h3>
+                        <h3 [ngStyle]="{'color':item.color}">{{item.title}}</h3>
                     </div>
                 </div>
             </div>

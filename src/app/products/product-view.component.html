@@ -1,0 +1,21 @@
+<mat-dialog-content>
+
+    <app-robotics *ngIf="type=='robotics'"></app-robotics>
+
+    <app-welding *ngIf="type=='welding'"></app-welding>
+
+    <app-spm *ngIf="type=='spm'"></app-spm>
+
+    <app-fabrication *ngIf="type=='fab'"></app-fabrication>
+
+    <app-line *ngIf="type=='line'"></app-line>
+
+    <app-simulation *ngIf="type=='sim'"></app-simulation>
+
+    <app-auto *ngIf="type=='auto'"></app-auto>
+
+    <app-gauges *ngIf="type=='gauges'"></app-gauges>
+
+    <app-tools *ngIf="type=='tools'"></app-tools>
+
+</mat-dialog-content>
