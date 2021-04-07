@@ -1,5 +1,7 @@
 <mat-dialog-content>
 
-    <img src="../../../../assets/products/" alt="">
+    <!-- <img src="../../../../assets/products/fabrication/" alt=""> -->
+
+    <img *ngFor="let e of ['','','','','','',''];let i= index;" src="{{'../../../../assets/products/fabrication/MECHWELL Company Intro  (1) (1) (2)_000'+(79+i)+'.jpg'}}" alt="">
 
 </mat-dialog-content>

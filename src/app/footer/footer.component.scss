@@ -18,6 +18,10 @@ li {
     padding: 0;
     color: #afafaf;
 }
+li:hover {
+    color: white;
+    cursor: pointer;
+}
 .footer-end {
     display: flex;
     width: 100%;
@@ -32,12 +36,13 @@ li {
     position: relative;
     padding-top: 48px;
 }
+
 @media only screen and (max-width: 768px) {
     .footer-end {
         flex-direction: column;
         padding-bottom: 24px;
     }
-    .footer{
+    .footer {
         padding-bottom: 24px;
     }
 }

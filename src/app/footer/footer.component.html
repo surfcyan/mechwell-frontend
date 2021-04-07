@@ -6,19 +6,19 @@
             <div class="col-md-3">
                 <h4>MWT</h4>
                 <ul>
-                    <li>About Us</li>
+                    <li routerLink="/aboutUs">About Us</li>
                     <li>Company Profile</li>
-                    <li>Our Group Companies</li>
-                    <li>Contact Us</li>
+                    <li routerLink="/groupCompanies">Our Group Companies</li>
+                    <li routerLink="/contactUs">Contact Us</li>
                 </ul>
             </div>
             <div class="col-md-3">
                 <h4>Works</h4>
                 <ul>
-                    <li>Line Automation</li>
-                    <li>Robotic Line Cells</li>
-                    <li>Welding SPM</li>
-                    <li>Jigs & Fixtures</li>
+                    <li routerLink="/products" [queryParams]="{ref:'1'}">Line Automation</li>
+                    <li routerLink="/products" [queryParams]="{ref:'2'}">Robotic Line Cells</li>
+                    <li routerLink="/products" [queryParams]="{ref:'5'}">Welding SPM</li>
+                    <li routerLink="/products" [queryParams]="{ref:'1'}">Jigs & Fixtures</li>
                 </ul>
             </div>
             <div class="col-md-3">
@@ -30,30 +30,11 @@
                 </ul>
             </div>
             <div class="col-md-3">
-                <!-- <h4>Line Automation</h4>
-                <ul>
-                    <li>Robotic cell for Spot & MIG Welding</li>
-                    <li>Spot & MIG Welding</li>
-                    <li>Assembly Line</li>
-                    <li>Automated Assembly Stations</li>
-                </ul> -->
                 <img src="../../assets/footer/Logo-ISO.png" alt="" style="width: 50%;margin: auto;display: block;">
             </div>
         </div>
 
     </div>
-
-    <!-- <div style="display: flex; position: absolute; bottom:0;width:100%; padding: 6px 24px;background-color: #343434;">
-        <div class="icon-grup">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </div>
-
-        <span class="flexOne"></span>
-
-        <p style="text-align:center;margin:auto;">Powered By KRISHNA SOFT CORP</p>
-    </div> -->
 
 </div>
 <div class="footer-end">

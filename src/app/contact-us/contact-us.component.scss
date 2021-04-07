@@ -2,13 +2,13 @@
     width: 100%;
 }
 
-.padding{
+.padding {
     padding: 64px 48px;
 }
-.map{
+.map {
     width: 100%;
 }
-.primary-button{
+.primary-button {
     background-color: white;
     outline: navajowhite;
     border: navajowhite;
@@ -16,4 +16,16 @@
     padding: 6px 24px;
     border-radius: 4px;
     font-weight: 500;
+}
+
+.text-cont {
+    margin-bottom: 24px;
+}
+.text-cont h4,
+.text-cont p {
+    margin: 0;
+}
+.text-cont a {
+    color: black;
+    text-decoration: none;
 }
